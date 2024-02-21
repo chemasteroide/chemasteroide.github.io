@@ -174,7 +174,7 @@ footer {
     text-align: center;
 }
 
-.degree:hover, .job:hover, .course:hover {
+.degree:hover, .job:hover{
     background-color: var(--main-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     width: 300px; /* Ajuste según necesidad */
@@ -192,14 +192,15 @@ footer {
     padding: 20px;
 }
 
-.courses-container {
+.competencias-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
-.course {
+.competencias {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,11 +208,19 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajuste según necesidad */
+    width: 90%; /* Ajuste según necesidad */
     text-align: center;
 }
 
-.course span {
+.competencias:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 93%; /* Ajuste según necesidad */
+    color: white;
+    transition: 0.25s;
+}
+
+.competencias span {
     font-size: 50px;
     margin-bottom: 10px;
 }
