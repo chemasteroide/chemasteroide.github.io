@@ -7,7 +7,9 @@ body {
 }
 
 :root {
-    --main-color: darkorange;
+    --main-color: #F07635;
+    --side-color: #9B6E56;
+    --third-color: #705C51
 }
 
 header, section, footer {
@@ -18,6 +20,11 @@ header, section, footer {
 
 header {
     text-align: center;
+    padding: 1px 0 1px 0;
+    background-color: var(--third-color);
+    width: 25%;
+    border-radius: 10px;
+    color: var(--main-color);
 }
 
 h1 {
@@ -25,7 +32,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--side-color);
     padding-bottom: 5px;
 }
 
@@ -33,14 +40,14 @@ section {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.986);
     margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: var(--main-color);
+    background-color: var(--side-color);
     color: #fff;
 }
 
@@ -66,13 +73,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 180px;
     text-align: center;
-}
-
-.language:hover {
-    background-color: var(--main-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 210px; /* Ajuste según necesidad */
-    transition: 0.25s;
 }
 
 .language span {
@@ -104,10 +104,11 @@ footer {
     text-align: center;
 }
 
-.skill:hover {
+.language:hover, .skill:hover {
     background-color: var(--main-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     width: 210px; /* Ajuste según necesidad */
+    color: white;
     transition: 0.25s;
 }
 
@@ -140,13 +141,6 @@ footer {
     text-align: center;
 }
 
-.job:hover {
-    background-color: var(--main-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 300px; /* Ajuste según necesidad */
-    transition: 0.25s;
-}
-
 .job span {
     font-size: 50px;
     margin-bottom: 10px;
@@ -176,10 +170,11 @@ footer {
     text-align: center;
 }
 
-.degree:hover {
+.degree:hover, .job:hover, .course:hover {
     background-color: var(--main-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     width: 300px; /* Ajuste según necesidad */
+    color: white;
     transition: 0.25s;
 }
 
@@ -210,13 +205,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 250px; /* Ajuste según necesidad */
     text-align: center;
-}
-
-.course:hover {
-    background-color: var(--main-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 300px; /* Ajuste según necesidad */
-    transition: 0.25s;
 }
 
 .course span {
