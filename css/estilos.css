@@ -92,6 +92,17 @@ footer {
     margin-bottom: 10px;
 }
 
+.native{
+    width: 90%;
+}
+
+.native:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 93%; /* Ajuste según necesidad */
+    color: white;
+    transition: 0.25s;
+}
 
 #informatica {
     background-color: #f4f4f4;
@@ -246,14 +257,3 @@ footer {
     order: -1;
 }
 
-.native{
-    width: 90%;
-}
-
-.native:hover{
-    background-color: var(--main-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    width: 93%; /* Ajuste según necesidad */
-    color: white;
-    transition: 0.25s;
-}
