@@ -63,7 +63,7 @@ footer {
 .languages-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -75,8 +75,16 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 180px;
+    width: 43%;
     text-align: center;
+}
+
+.language:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 44%; /* Ajuste según necesidad */
+    color: white;
+    transition: 0.25s;
 }
 
 .language span {
@@ -108,7 +116,7 @@ footer {
     text-align: center;
 }
 
-.language:hover, .skill:hover {
+.skill:hover {
     background-color: var(--main-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     width: 210px; /* Ajuste según necesidad */
@@ -232,4 +240,20 @@ footer {
 .competencias span {
     font-size: 50px;
     margin-bottom: 10px;
+}
+
+.priority{
+    order: -1;
+}
+
+.native{
+    width: 90%;
+}
+
+.native:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 93%; /* Ajuste según necesidad */
+    color: white;
+    transition: 0.25s;
 }
